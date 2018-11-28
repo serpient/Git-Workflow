@@ -102,3 +102,15 @@ The body should be used to explain what and why vs how.  Just focus on making cl
 - why you decided to solve it the way you did
 
 - what side effects it might have
+
+# Git Workflow
+1. Go to development branch, `git pull` to make sure you have all the recent changes. Then branch off of it to make a new feature/refactor/bug branch for yourself. 
+2. As you work, continue to commit small code changes (your commits should not be huge!) and push up to your remote branch on github.
+3. Once your assigned task is finished and bug-free, pull in the `development branch` to make sure you are caught up.
+4. at this point, if there are any merge changes, go through them carefully and ask other people in the team if you are not sure which changes should be kept.
+5. once development branch is merged, you can now open a Pull Request on github
+6. write a detailed write up of what work was done and why. Insert images if you have touched any visual items. 
+7. Request a review from another teammate
+8. The reviewer should look over the code and test that branch locally on their computer. If there are changes needed, the original coder can just make the changes, commit your changes, and the PR will see the new changes! Then it can be approved and merged into development.
+9. Rinse and repeat!
+[example PR](https://github.com/chingu-x/chingu-frontend/pull/161)
