@@ -1,6 +1,4 @@
-# Git-Workflow
-
-## Basic Repo Setup
+# Basic Repo Setup
 ```
 git clone <github-repo-link>
 # Go to the project folder
@@ -8,8 +6,19 @@ git remote add upstream <github-repo-link>
 npm install
 npm start
 ```
+# Git Workflow
+1. Go to development branch, `git pull` to make sure you have all the recent changes. Then branch off of it to make a new feature/refactor/bug branch for yourself.
+2. As you work, continue to commit small code changes (your commits should not be huge!) and push up to your remote branch on github.
+3. Once your assigned task is finished and bug-free, pull in the `development branch` to make sure you are caught up.
+4. at this point, if there are any merge changes, go through them carefully and ask other people in the team if you are not sure which changes should be kept.
+5. once development branch is merged, you can now open a Pull Request on github
+6. write a detailed write up of what work was done and why. Insert images if you have touched any visual items.
+7. Request a review from another teammate
+8. The reviewer should look over the code and test that branch locally on their computer. If there are changes needed, the original coder can just make the changes, commit your changes, and the PR will see the new changes! Then it can be approved and merged into development.
+9. Rinse and repeat!
+[example PR](https://github.com/chingu-x/chingu-frontend/pull/161)
 
-## Branches
+# Branches
 ![branch diagram](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LBgap1plocY399TI_RC%2F-LD3ihnzhbIWImq3FpPW%2F-LD3lVo2t4s_QI1KSbws%2Fimage.png?alt=media&token=4bd124cf-ff78-45eb-85b6-9ab99bef113b)
 
 #### Master Branch
@@ -38,9 +47,9 @@ feature/giant-duck-modal
 refactor/add-prop-types
 style/everything-is-black
 ```
-## Git Commit Rules
+# Git Commit Rules
 
-#### What should be a commit:
+## What should be a commit:
 - Each commit should be a single logical change. Don't make several logical changes in one commit. For example, if a patch fixes a bug and optimizes the performance of a feature, split it into two separate commits.
 
 - Don't split a single logical change into several commits. For example, the implementation of a feature and the corresponding tests should be in the same commit.
@@ -51,7 +60,7 @@ style/everything-is-black
 
 - Test before you push. Do not push half-done work.
 
-#### Commit Subject Name Rules:
+## Commit Subject Name Rules:
 - Limit the subject line to 50 characters.
 
 - Capitalize the subject line
@@ -92,7 +101,7 @@ To remove any confusion, here’s a simple rule to get it right every time. A pr
 
 - If applied, this commit will ... sweet new API methods
 
-#### Commit Body Rules
+## Commit Body Rules
 The body should be used to explain what and why vs how.  Just focus on making clear the reasons:
 
 - why you made the change in the first place (the way things worked before the change and what was wrong with that.)
